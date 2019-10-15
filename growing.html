@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/growing.css">
+    <title>Santa Rosa's Garden</title>
+</head>
+
+<body>
+        <header class="header">
+                <nav class="nav">
+                    <!-- En los lis utiliza el a href con style para sobreescibir el css -->
+                    <h3>Santa Rosa's Garden</h3>
+                    <ul class="list nav__links list--horizontal">
+                        <li><a href="trees.html" style="text-decoration: none; color:#916356;">Trees</a></li>
+                        <li><a href="garden.html" style="text-decoration: none; color:#916356;">Garden</a></li>
+                        <li><a href="forest.html" style="text-decoration: none; color:#916356;">Forest</a></li>
+                        <li><a href="profile.html" style="text-decoration: none; color:#916356;">Profile</a></li>
+                        <li><a href="leaderboard.html" style="text-decoration: none; color:#916356;">Leaderboard</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <section class="screen">
+        <section class="plant__care">
+
+            <div class="cares">
+                <div class="water">
+                    
+                </div>
+                <div class="compost">
+                    
+                </div>
+                <div class="needs" id="needs">
+                    
+                </div>
+            </div>
+
+            <div class="plant__img" id="plant_img">
+            </div>
+        </section>
+
+        <section class="plant__info">
+
+            <div class="plant__name">
+                Guanacaste
+            </div>
+            <div class="plant__stage">
+                
+            </div>
+            <div class="instructions">
+                
+            </div>
+            <div class="btn_to_forest">
+                    <button class="btn plant_on_forest"><a href="forest.html" style="text-decoration: none; color: greenyellow;">Go to Forest</a></button>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha256-nuhNsfXzBFR6G1lKP8bK77dakkQDqdHcQ4OCFZvk6Qo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" integrity="sha256-LBjlnpPrM6Aig8LDFc9PJctPHLGUc6RaUvnmXE4hV5Y=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha256-VV47uJSoHZUeiBcCs3FcBOQLMn++yeG/zqZvaUkvGZM=" crossorigin="anonymous"></script>
+    <script src="./js/growing.js"></script>
+</body>
+
+</html>

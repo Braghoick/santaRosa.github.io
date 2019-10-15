@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    /* #c34b6c; */
+    /* #c35432 */
+    --secondary: #transparent;
+
+    --white: #f8f8f8;
+    --dark: #141414;
+
+    --facebook: #465898;
+    --google: #c24e3a;
+    --linkedin: #5874a7;
+
+    font-family: 'Ubuntu';
+    font-size: 14px;
+}
+
+/* Header */
+.header {
+	height: 10vh;
+	position: relative;
+	display: flex;
+}
+
+.nav {
+	/* background-color: #fff; */
+	color: #916356;
+    cursor: pointer;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+    position: absolute;
+	/* overflow: hidden; */
+}
+
+.list {
+	list-style: none;
+}
+
+.list--horizontal {
+	display: flex;
+	width: 60%;
+	justify-content: space-around;
+}
+
+.list__link {
+	text-decoration: none;
+	color: #916356;
+}
+/* Fin del header */
+
+
+body{
+	background-image: url(/img/amanecer.png);
+	background-size: cover;
+}
+
+.leaderboard {
+    position:relative;
+    width:70%;
+    height:70%;
+    margin: 30px auto 0 auto;
+    padding:3%;
+}
+
+.leaderboard h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin:30px;
+    padding:0;
+	color: white;
+	font-family: 'Press Start 2P';
+}
+
+.first_place{
+	position: relative;
+	text-align: center;
+	color: white;
+	/* font-family: 'Press Start 2P'; */
+}

@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    /* #c34b6c; */
+    /* #c35432 */
+    --secondary: #transparent;
+
+    --white: #f8f8f8;
+    --dark: #141414;
+
+    --facebook: #465898;
+    --google: #c24e3a;
+    --linkedin: #5874a7;
+
+    font-family: 'Ubuntu';
+    font-size: 14px;
+}
+
+body{
+    background-image: url(/img/dia.png);
+    background-size: cover;
+
+}
+
+
+/* Header */
+.header {
+	height: 10vh;
+	position: relative;
+	display: flex;
+}
+
+.nav {
+	/* background-color: #fff; */
+	color: #916356;
+    cursor: pointer;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+    position: absolute;
+	/* overflow: hidden; */
+}
+
+.list {
+	list-style: none;
+}
+
+.list--horizontal {
+	display: flex;
+	width: 60%;
+	justify-content: space-around;
+}
+
+.list__link {
+	text-decoration: none;
+	color: #916356;
+}
+/* Fin del header */
+
+
+/* Trees Selection */
+.tree_select{
+    display: grid;
+    position: relative;
+    left: .01rem;
+    top: 12rem;
+    width: 90vw;
+    height: 30vh;
+    margin: auto;
+    grid-template-columns: 16vw 16vw 16vw 16vw 16vw;
+    grid-gap: 2.5vw;
+
+    transition: 600ms;
+}
+
+.tree_select > div{
+    z-index: 2;
+    display: block;
+    color: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+    transition: 600ms;
+}
+
+.guanacaste{
+    background-image: url(/img/guanacaste.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.pochote{
+    background-image: url(/img/pochote.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.maliche{
+    background-image: url(/img/malinche.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.cortes{
+    background-image: url(/img/cortes.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.caoba{
+    background-image: url(/img/caoba.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 90%;
+    padding: 0 5%;
+    height: 100vh;
+    transition: 600ms;
+}
+
+.container__col{
+    display: block;
+    float: left;
+    width: calc(100%/3);
+    transition: 600ms;
+}
+
+.plantIt{
+    display: block;
+    position: absolute;
+    /* Ajustar height y width segun texto
+    y acomodar con bottom/top/left/right */
+    right: 175px;
+    bottom: 50px;
+    /* height: 60vh;  */
+    /* Ajustar tambien el width segun img */
+     width:5vw;
+
+     transition: 600ms;
+}
+
+.guanacaste__dash{
+    display: none;
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    background: rgb(64, 192, 250, 0.5);
+    transition: 600ms;
+}
+
+.pochote__dash{
+    display: none;
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    background: rgb(64, 192, 250, 0.5);
+    transition: 600ms;
+}
+    
+
+.maliche__dash{
+    display: none;
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    transition: 600ms;
+    background: rgb(64, 192, 250, 0.5);}
+
+.cortes__dash{
+    display: none;
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    transition: 600ms;
+    background: rgb(64, 192, 250, 0.5);}
+
+.caoba__dash{
+    display: none;
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    transition: 600ms;
+    background: rgb(64, 192, 250, 0.5);}
+
+.guanacaste__img{
+    display: block;
+    position: absolute;
+    background-image: url(/img/guanacaste.gif);
+    background-size: cover;
+    background-position: center;
+    /* Ajustar height segun la img
+    y acomodar con bottom/top/left/right */
+    height: 45vh; 
+    top: 350px;
+    /* Ajustar tambien el width segun img */
+     width:22.5vw;
+
+     transition: 600ms;
+}
+
+.pochote__img{
+    display: block;
+    position: absolute;
+    background-image: url(/img/pochote.gif);
+    background-size: cover;
+    background-position: center;
+    /* Ajustar height segun la img
+    y acomodar con bottom/top/left/right */
+    height: 45vh; 
+    top: 350px;
+    /* Ajustar tambien el width segun img */
+     width:22.5vw;
+
+     transition: 600ms;
+}
+.maliche__img{
+    display: block;
+    position: absolute;
+    background-image: url(/img/malinche.gif);
+    background-size: cover;
+    background-position: center;
+    /* Ajustar height segun la img
+    y acomodar con bottom/top/left/right */
+    height: 45vh; 
+    top: 350px;
+    /* Ajustar tambien el width segun img */
+     width:22.5vw;
+
+     transition: 600ms;
+}
+.cortes__img{
+    display: block;
+    position: absolute;
+    background-image: url(/img/cortes.gif);
+    background-size: cover;
+    background-position: center;
+    /* Ajustar height segun la img
+    y acomodar con bottom/top/left/right */
+    height: 45vh; 
+    top: 350px;
+    /* Ajustar tambien el width segun img */
+     width:22.5vw;
+
+     transition: 600ms;
+}
+.caoba__img{
+    display: block;
+    position: absolute;
+    background-image: url(/img/caoba.gif);
+    background-size: cover;
+    background-position: center;
+    /* Ajustar height segun la img
+    y acomodar con bottom/top/left/right */
+    height: 45vh; 
+    top: 350px;
+    /* Ajustar tambien el width segun img */
+     width:22.5vw;
+
+     transition: 600ms;
+}
+
+/* Nombre arboles */
+.guanacaste__name{
+    display: inline-block;
+    position: absolute;
+    text-shadow: 2px 2px rgb(0,0,0,0.5);
+    left: 500px;
+    top: 350px;
+
+    padding: 0.75rem;
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+
+    transition: 600ms;
+}
+.pochote__name{
+    display: inline-block;
+    position: absolute;
+    text-shadow: 2px 2px rgb(0,0,0,0.5);
+    left: 500px;
+    top: 350px;
+
+    padding: 0.75rem;
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+
+    transition: 600ms;
+}
+.maliche__name{
+    display: inline-block;
+    position: absolute;
+    text-shadow: 2px 2px rgb(0,0,0,0.5);
+    left: 500px;
+    top: 350px;
+
+    padding: 0.75rem;
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+
+    transition: 600ms;
+}
+.cortes__name{
+    display: inline-block;
+    position: absolute;
+    text-shadow: 2px 2px rgb(0,0,0,0.5);
+    left: 500px;
+    top: 350px;
+    padding: 0.75rem;
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+
+    transition: 600ms;
+}
+.caoba__name{
+    display: inline-block;
+    position: absolute;
+    text-shadow: 2px 2px rgb(0,0,0,0.5);
+    left: 500px;
+    top: 350px;
+
+    padding: 0.75rem;
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+
+    transition: 600ms;
+}
+/* Informacion de arboles */
+.guanacaste__info{
+    display: block;
+    position: absolute;
+    padding: 0.75rem;
+    left: 500px;
+    top: 425px;
+     width: 40vw;
+     text-shadow: 2px 2px rgb(0,0,0,0.25);
+
+     transition: 600ms;
+}
+.pochote__info{
+    display: block;
+    position: absolute;
+    padding: 0.75rem;
+    left: 500px;
+    top: 425px;
+     width: 40vw;
+     text-shadow: 2px 2px rgb(0,0,0,0.25);
+
+     transition: 600ms;
+}
+.maliche__info{
+    display: block;
+    position: absolute;
+    padding: 0.75rem;
+    left: 500px;
+    top: 425px;
+     width: 40vw;
+     text-shadow: 2px 2px rgb(0,0,0,0.25);
+
+     transition: 600ms;
+}
+.cortes__info{
+    display: block;
+    position: absolute;
+    padding: 0.75rem;
+    left: 500px;
+    top: 470px;
+     width: 40vw;
+     text-shadow: 2px 2px rgb(0,0,0,0.25);
+
+     transition: 600ms;
+}
+.caoba__info{
+    display: block;
+    position: absolute;
+    padding: 0.75rem;
+    left: 500px;
+    top: 425px;
+     width: 40vw;
+     text-shadow: 2px 2px rgb(0,0,0,0.25);
+
+     transition: 600ms;
+}

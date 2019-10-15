@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Santa Rosa's Garden</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="sakura">
+            <img class="sakura" src="/img/sakura.png" alt="sakura" width=1710%>
+        </div>
+        <!-- Pantalla principal de welcome -->
+        <div class="welcome">
+            <h2 class="welcome__title welcome__title--white">Welcome to </h2>
+            <h2 class="santa__rosa">Santa Rosa</h2>
+            <p class="welcome__message">Start changing your country</p>
+
+            <div class="container-btn container-welcome">
+                <button class="btn register_btn " type="button">Register</button>
+            </div>
+
+            <div class="container-btn container-sign_in">
+                <button class="btn sign_in_btn " type="button">Sign in</button>
+            </div>
+
+        <!-- Pantalla de Registro -->
+            <div class="register-container">
+
+                <h2 class="login__title">Register With</h2>
+
+                <div class="login__icons">
+
+                    <spam class="login__icon login__icon-face">
+                        <i class="fab fa-facebook-f"></i>
+                    </spam>
+
+                    <spam class="login__icon login__icon-google">
+                            <i class="fab fa-google-plus"></i>
+                    </spam>
+
+                    <spam class="login__icon login__icon-in">
+                            <i class="fab fa-linkedin"></i>
+                    </spam>
+
+                </div>
+
+                <p class="login__text">or create your account</p>
+
+                <form class="login__form" autocomplete="on">
+                    <input class="form__input" type="user" id="user" name="user" placeholder="Username">
+                    <input class="form__input" type="email" id="email" name="email" placeholder="Email">
+                    <input class="form__input" type="password" id="password" name="password" placeholder="Password">
+                    <input class="form__input" type="confirm_password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+
+                    <!-- <input type="submit" value="Sign In"> -->
+                    <div class="container-btn container-welcome">
+                        <button class="btn register_to_confirm_btn " type="button">Register</button>
+                    </div>
+                </form>
+
+            </div>
+
+        <!-- Pantalla de login -->
+        <div class="login-container">
+
+            <h2 class="login__title">Sign In With</h2>
+
+            <div class="login__icons">
+
+                <spam class="login__icon login__icon-face">
+                    <i class="fab fa-facebook-f"></i>
+                </spam>
+
+                <spam class="login__icon login__icon-google">
+                        <i class="fab fa-google-plus"></i>
+                </spam>
+
+                <spam class="login__icon login__icon-in">
+                        <i class="fab fa-linkedin"></i>
+                </spam>
+
+            </div>
+
+            <p class="login__text">or use your account</p>
+
+            <form class="login__form" autocomplete="on">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Email">
+                <input class="form__input" type="password" id="password" name="password" placeholder="Password">
+
+                <a href="forgotPassword.html" class="login__text login__text-link">Forgot password?</a>
+
+                <!-- <input type="submit" value="Sign In"> -->
+                <div class="container-btn container-welcome">
+                    <!-- En el a href se utilizo style para cambiar los valores fuera del css -->
+                    <button class="btn login_btn" type="button"><a href="trees.html" style="text-decoration: none; color: white;">Sign In</a></button>
+                </div>
+            </form>
+
+        </div>
+
+        <!-- Pantalla de confirmar correo -->
+        <div class="confirm-container">
+
+            <h2 class="confirm__title">Succesfully Registered</h2>
+
+
+            <p class="confirm__text">Please sign in with your account</p>
+
+            <div class="container-btn container-welcome">
+                <button class="btn confirm_to_signIn_btn " type="submit">Sign In</button>
+            </div>
+
+        </div>
+        </div>
+        
+    </div>
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha256-nuhNsfXzBFR6G1lKP8bK77dakkQDqdHcQ4OCFZvk6Qo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" integrity="sha256-LBjlnpPrM6Aig8LDFc9PJctPHLGUc6RaUvnmXE4hV5Y=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha256-VV47uJSoHZUeiBcCs3FcBOQLMn++yeG/zqZvaUkvGZM=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

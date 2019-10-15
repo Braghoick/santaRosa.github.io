@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    /* #c34b6c; */
+    /* #c35432 */
+    --secondary: #transparent;
+
+    --white: #f8f8f8;
+    --dark: #141414;
+
+    --facebook: #465898;
+    --google: #c24e3a;
+    --linkedin: #5874a7;
+
+    font-family: 'Ubuntu';
+    font-size: 14px;
+}
+
+
+
+/* Login/Register/Confirm/Forgot Password */
+.app{
+    width: 100%;
+    background-image: url(../img/noche.png);
+    background-size: cover;
+    height: 100vh;
+
+    display: -ms-grid;
+
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+
+    -ms-grid-columns: 5% 1fr 1fr 5%;
+
+    grid-template-columns: 5% 1fr 1fr 5%;
+    /* grid-template-columns: repeat(2, 1fr); */
+
+    -ms-grid-rows: 5% 1fr 5%;
+
+    grid-template-rows: 5% 1fr 5%;
+
+        grid-template-areas: 
+    'top     top   top     top'
+    'margin1 login welcome margin2'
+    'bottom bottom bottom bottom';
+    
+    
+
+}
+
+
+
+.login-container,
+.register-container,
+.confirm-container{
+    display:none;
+}
+
+.login-form,
+.welcome{
+    height: 100%;
+    width: 100%;
+
+    background: transparent;
+
+}
+
+.login_style{
+    color: black;
+}
+
+.login__title,
+.welcome__title,
+.confirm__title{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.santa__rosa{
+    font-family: 'Press Start 2P';
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1.75rem;
+}
+
+.welcome__message{
+    font-size: .6cm;
+    text-align: center;
+    color: var(--white);
+}
+
+.welcome__title--white{
+    color: var(--white);
+}
+
+.login-form{
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: login;
+    border-radius: 20px 0px 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: none ;
+    
+}
+
+.login__icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.login__icon{
+    display: block;
+    margin: 0 1rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4.2rem;
+    font-size: 0.8cm;
+    color: white;
+    text-align: center;
+    background: #c24e3a;
+    
+    border-radius: 50%;
+}
+
+.login__icon-face{
+    background: var(--facebook);
+}
+
+.login__icon-google{
+    background: var(--google);
+}
+
+.login__icon-in{
+    background: var(--linkedin);
+}
+
+.login__text,
+.confirm__text{
+    text-align: center;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.confirm__text{
+    font-size: 1.5rem
+}
+
+.login__text-link{
+    color: white;
+    text-decoration: none;
+    margin: 0.75rem;
+    opacity: .6;
+    -webkit-transition: 0.5s opacity;
+    -o-transition: 0.5s opacity;
+    transition: 0.5s opacity;
+}
+
+.login__text-link:hover{
+    text-decoration: underline;
+    opacity:1;
+
+}
+
+.welcome{
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: welcome;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    background: -webkit-gradient(linear, right top, left top, from(var(--primary)), to(var(--secondary))); */
+    /* background: -o-linear-gradient(right, var(--primary), var(--secondary)); */
+     background: linear-gradient(to left, var(--primary), var(--secondary));
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+
+    transition: 600ms;
+}
+
+.login__form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    transition: 600ms;
+}
+
+.form__input{
+    margin-bottom: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    background: #EEE;
+    border: none;
+    border-radius: 5%;
+    transition: 1000ms;
+}
+
+.form__input:focus{
+    background-color: rgba(0,0,0, 0.25);
+    width: 225px;
+}
+
+.container-btn{
+    display: block;
+}
+
+.forgot-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    transition: 600ms;
+}
+
+.forgot__title{
+    padding-bottom: 1rem;
+    color: white;
+    font-size: 1.6cm;
+
+    transition: 600ms;
+}
+
+.forgot__text{
+    color: white;
+    padding-bottom: 1rem;
+
+    transition: 600ms;
+}
+
+.forgot__email{
+    width: 13rem;
+    margin: 5px auto;
+
+    transition: 600ms;
+}
+
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    padding: .75rem 0;
+    width: 10rem; 
+    background: var(--secondary); 
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--white);
+    border: none;
+    font-weight: bold; 
+    font-family: 'Press Start 2P';
+
+    transition: 600ms;
+}
+
+
+.register_btn,
+.sign_in_btn,
+.login_btn,
+.register_to_confirm_btn,
+.confirm_to_signIn_btn,
+.forgot__btn,
+.plant__btn,
+.plant_on_forest{
+    display: block;
+    margin: 5px auto;
+    border: 1px solid white;
+    background: transparent;
+    -webkit-transform: translateY(25px);
+        -ms-transform: translateY(25px);
+            transform: translateY(25px); 
+
+    transition: 600ms;
+    
+}
+
+.register_btn:hover{
+    background: var(--white);
+    color: var(--secondary);
+
+}
+
+.sign_in_btn:hover{
+    background: var(--white);
+    color: var(--secondary);
+
+}
+
+.login_btn:hover{
+    background: black;
+}
+
+.register_to_confirm_btn:hover{
+    background: var(--white);
+    color: var(--secondary);
+
+}
+
+.confirm_to_signIn_btn:hover{
+    background: var(--white);
+    color: var(--secondary);
+
+}
+
+.forgot__btn:hover{
+    background: var(--white);
+    color: var(--secondary);
+
+}
+
+.plant__btn:hover{
+    background: black;    
+
+}
+
+.plant_on_forest:hover{
+    background: var(--white);
+    color: var(--secondary);
+
+}
+
+
+

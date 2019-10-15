@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    /* #c34b6c; */
+    /* #c35432 */
+    --secondary: #transparent;
+
+    --white: #f8f8f8;
+    --dark: #141414;
+
+    --facebook: #465898;
+    --google: #c24e3a;
+    --linkedin: #5874a7;
+
+    font-family: 'Ubuntu';
+    font-size: 14px;
+}
+
+body{
+    background-image: url(/img/amanecer.png);
+    background-size: cover;
+
+}
+
+/* Garden */
+/* Header */
+.header {
+	height: 10vh;
+	position: relative;
+	display: flex;
+}
+
+.nav {
+	/* background-color: #738FFF; */
+	color: #916356;
+    cursor: pointer;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+    position: absolute;
+	/* overflow: hidden; */
+}
+
+.list {
+	list-style: none;
+}
+
+.list--horizontal {
+	display: flex;
+	width: 60%;
+	justify-content: space-around;
+}
+
+.list__link {
+	text-decoration: none;
+	color: #916356;
+}
+/* Fin del header */
+
+.garden{
+    display: grid;
+    position: relative;
+    padding-left: 25rem;
+    /* 25 a 17 */
+    top: 7.5vh;
+    width: 100vw;
+    height: 30vh;
+    margin: auto;
+    transition: 600ms;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+    grid-gap: 2.5vw;
+    
+}
+
+.garden__space__1{
+    display: block;
+    color: #000;
+    background-image: url(/img/sguanacaste.png);
+    background-position: center;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.garden__space__1:hover{
+    background-image: url(/img/sguanacaste2.png);
+
+}
+
+.garden__space__2{
+    display: block;
+    color: #000;
+    background-image: url(/img/scaoba.png);
+    background-position: center;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.garden__space__2:hover{
+    background-image: url(/img/scaoba2.png);
+
+}
+
+.garden__space__3{
+    display: block;
+    color: #000;
+    background-image: url(/img/smalinche.png);
+    background-position: center;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.garden__space__3:hover{
+    background-image: url(/img/smalinche2.png);
+
+}
+
+.garden__space__4{
+    display: block;
+    color: #000;
+    background-image: url(/img/scortes.png);
+    background-position: center;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.garden__space__4:hover{
+    background-image: url(/img/scortes2.png);
+
+}
+
+.garden__space__5{
+    display: block;
+    color: #000;
+    background-image: url(/img/spochote.png);
+    background-position: center;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.garden__space__5:hover{
+    background-image: url(/img/spochote2.png);
+
+}
+
+.garden__space__6{
+    display: block;
+    color: #000;
+    background: transparent;
+}
+
+.garden__space__7{
+    display: block;
+    color: #000;
+    background: transparent;
+}
+
+.garden__space__8{
+    display: block;
+    color: #000;
+    background: transparent;
+}
+
+.garden__space__9{
+    display: block;
+    color: #000;
+    background: transparent;
+}
+
+.garden__space__10{
+    display: block;
+    color: #000;
+    background: transparent;
+}
+
+.garden__space__11{
+    display: block;
+    color: #000;
+    background: transparent;
+}
+
+.garden__space__12{
+    display: block;
+    color: #000;
+    background: transparent;
+}
+
+
+.tree__info{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 28vw;
+    transition: 600ms;
+    background: rgb(0, 168, 97, .5);
+    top: 0;
+    right: 0px;
+    
+}
+
+.tree__img{
+    display: block;
+    background-image: url(/img/semilla0.gif);
+    background-position: center;
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.tree__name{
+    display: block;
+    font-family: 'Press Start 2P';
+    margin-top: 3rem;
+    margin-left: 5.5rem;
+}
+
+.tree__description{
+    display: block;
+    position: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.touch{
+    display: block;
+    position: center;
+    width: 15rem;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+
+
+
+}

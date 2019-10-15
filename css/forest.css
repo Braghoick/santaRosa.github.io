@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    /* #c34b6c; */
+    /* #c35432 */
+    --secondary: #transparent;
+
+    --white: #f8f8f8;
+    --dark: #141414;
+
+    --facebook: #465898;
+    --google: #c24e3a;
+    --linkedin: #5874a7;
+
+    font-family: 'Ubuntu';
+    font-size: 14px;
+}
+
+
+
+body{
+    background-image: url(/img/fiorest.png);
+    background-size: cover;
+
+}
+
+
+/* Header */
+.header {
+	height: 10vh;
+	position: relative;
+	display: flex;
+}
+
+.nav {
+	/* background-color: #fff; */
+	color: #916356;
+    cursor: pointer;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+    position: absolute;
+	/* overflow: hidden; */
+}
+
+.list {
+	list-style: none;
+}
+
+.list--horizontal {
+	display: flex;
+	width: 60%;
+	justify-content: space-around;
+}
+
+.list__link {
+	text-decoration: none;
+	color: #916356;
+}
+/* Fin del header */
+
+
+/* Trees Selection */
+.tree_row1{
+    display: grid;
+    position: absolute;
+    left: 5rem;
+    top: 27.5rem;
+    width: 90vw;
+    height: 30vh;
+    margin: auto;
+    grid-template-columns: 16vw 16vw 16vw 16vw 16vw;
+    grid-gap: 2.5vw;
+
+    transition: 600ms;
+}
+
+.tree_row2{
+    display: grid;
+    position: absolute;
+    left: 1.5rem;
+    top: 20rem;
+    width: 90vw;
+    height: 30vh;
+    margin: auto;
+    grid-template-columns: 16vw 16vw 16vw 16vw 16vw 16vw;
+    grid-gap: 0.25vw;
+
+    transition: 600ms;
+}
+
+
+.guanacaste{
+    background-image: url(/img/guanacaste.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.pochote{
+    background-image: url(/img/pochote.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.maliche{
+    background-image: url(/img/malinche.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.cortes{
+    background-image: url(/img/cortes.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.caoba{
+    background-image: url(/img/caoba.gif);
+    background-size: cover;
+    background-position: center;
+}
